@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loop Map Display</title>
+
+    <style>
+body{
+    max-width: 1176px;
+    margin: auto;
+    margin-top: 50px;
+}
+h1{
+    display: inline-block;
+    margin: 10px;
+    font: 1.2rem/.1 arial;
+    position: relative;
+}
+h1:before{
+    content: '';
+    position: absolute;
+    background-color: yellow;
+    height: 10px;
+    width: 10px;
+}
+#spin{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    margin: 1px;
+    border-radius: 50%;
+    display: inline-block;
+}
+    </style>
+</head>
+<body>
+    <!-- <div id="app"></div> -->
+</body>
+
+<script>
+    let nums = []
+    for(i=0; i<100; i++){
+        nums.push(i); 
+    }
+
+const result = nums.map((num) => document.write( "<h1>Hello</h1>" ))
+document.write(result.splice())
+
+// const spin = "<h1>Hello</h1>"
+// const result = nums.map((num) => document.getElementById("app").innerHTML = spin)
+
+</script>
+</html>
